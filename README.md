@@ -9,3 +9,5 @@ INFORMAÇÕES IMPORTANTES:</b>
 
 - a versão da Unity utilizada é a <b>2021.1.0b3</b> 
 
+- o diretório dos scripts é o <b> Assets -> Scripts </b>
+
