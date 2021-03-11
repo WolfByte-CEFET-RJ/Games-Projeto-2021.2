@@ -4,6 +4,6 @@
 
 <b>
 INFORMAÇÕES IMPORTANTES:
-o jogo esta sendo programado em C# 
-a versão da Unity utilizada é a 2021.1.0b3 
+- o jogo esta sendo programado em C# 
+- a versão da Unity utilizada é a 2021.1.0b3 
 </b>
