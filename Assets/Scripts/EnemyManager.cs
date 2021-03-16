@@ -12,15 +12,22 @@ public class EnemyManager : MonoBehaviour
     
 
     [SerializeField] private int contador;
-    float tempo = 3f;
+    [SerializeField] float limite = 0;
+    float tempo = 1f;
 
-    //array para cada tipo de inimigo?
-    //
-    //
+    
+
+
+    public GameObject audioMan;
+    float bpm;
+    int nextIndex;
+    
 
     void Start()
     {
         contador = 0;
+        //audioMan = GameObject.Find("AudioManager").GetComponent<Conductor>();
+        //bpm = audioMan.songBpm;
     }
 
     // Update is called once per frame
@@ -29,24 +36,18 @@ public class EnemyManager : MonoBehaviour
         //a cada 3 segundos um item é spawnado no mapa
        
         tempo -= Time.deltaTime;
-
-        if(tempo <= 0f)
+        
+        
+        if(tempo <= 0f && limite <= 30)
         {
             contador = Random.Range(1,4);
             Debug.Log(contador);
             Inst_Aleatoria(contador);
-            tempo = 3f;
+            tempo = 1f;
+            limite++;
         }
-        
 
-
-        
-        /*
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            GameObject low = Instantiate(lowEnemies[Random.Range(0, lowEnemies.Length)], positions[0].position, positions[0].rotation);
-            Destroy(low, 5f);
-        }*/
+          
     }
     
     //Instancia Aleatória

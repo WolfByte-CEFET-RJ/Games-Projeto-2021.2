@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
       propertyPath: m_Name
-      value: Enemy_low (1)
+      value: Enemy_low (1) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 510041213967658226, guid: 65b810fd7c9330741863899825f97a27, type: 3}
       propertyPath: m_Color.b
