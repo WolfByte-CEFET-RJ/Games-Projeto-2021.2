@@ -329,11 +329,15 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Arts/Bandits - Pixel Art/Demo/Bandit.cs"
 "Assets/Arts/Bandits - Pixel Art/Demo/Sensor_Bandit.cs"
+"Assets/Scripts/AttackBelow.cs"
+"Assets/Scripts/AttackFront.cs"
+"Assets/Scripts/AttackUP.cs"
 "Assets/Scripts/AudioManager/AudioManager.cs"
 "Assets/Scripts/AudioManager/Conductor.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Movement.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0
 

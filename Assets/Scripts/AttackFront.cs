@@ -11,7 +11,7 @@ public class AttackFront : MonoBehaviour
     public float attackRange;
     public LayerMask whatIsEnemies;
     public int damage;
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -32,5 +32,5 @@ public class AttackFront : MonoBehaviour
     void OnDrawGizmosSelected(){
         Gizmos.color= Color.red;
         Gizmos.DrawWireSphere(attackPos.position,attackRange);
-    }
+    }*/
 }

@@ -27,8 +27,6 @@ public class Player : MonoBehaviour
         float movx = Input.GetAxis("Horizontal");
         float movy = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(velocidade * movx ,0);
-
-        distance = Vector3.Distance(gameObject.transform.position, mid.transform.position);
-      
+            
     }
 }

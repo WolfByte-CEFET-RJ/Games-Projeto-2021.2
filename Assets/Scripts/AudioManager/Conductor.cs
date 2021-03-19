@@ -26,6 +26,16 @@ public class Conductor : MonoBehaviour
     //quantas batidas existem na tela
     public float BeatsShownInAdvance = 4f;
 
+
+    //relativo a informação de qtd de loops
+    //trabalhar mais nisso aqui 
+    public int completedLoops = 0;
+
+    public float beatsPerLoop;
+
+    public float loopPositionInBeats;
+
+
     void Start()
     {
         musicSource = GetComponent<AudioSource>();
@@ -34,9 +44,17 @@ public class Conductor : MonoBehaviour
         musicSource.Play();        
     }
 
+
+    //musica começa no 14f e 32f
     void Update() {
 
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
         songPositionInBeats = songPosition/secondsPerBeat;    
+        
+
+        //saber a quantidade de loops
+        if(songPositionInBeats >= (completedLoops + 1 )* beatsPerLoop)
+            completedLoops++;
+        loopPositionInBeats = songPositionInBeats - completedLoops * beatsPerLoop;
     }
 }
