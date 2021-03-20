@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject player;
     
     public float beatsPorTempo = 130f;
+    public bool podeAcertar;
 
     void Start()
     {
@@ -18,6 +19,23 @@ public class Enemy : MonoBehaviour
         Vector2 move = new Vector2(-beatsPorTempo * Time.deltaTime, 0f);
         this.transform.Translate(move);
 
-        float dist = Vector3.Distance(this.transform.position, player.transform.position);
+        if(podeAcertar == true)
+        {
+            if(Input.GetKey(KeyCode.Space))
+                Destroy(this.gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Check")
+            podeAcertar = true;
+    
+    }
+     
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Check")
+            podeAcertar = false;
     }
 }
