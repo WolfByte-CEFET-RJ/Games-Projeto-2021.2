@@ -338,6 +338,7 @@
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Movement.cs"
+"Assets/Scripts/ObjectPooler.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0
 

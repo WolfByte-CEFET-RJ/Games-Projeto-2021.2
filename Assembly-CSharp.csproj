@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\AudioManager\Conductor.cs" />
      <Compile Include="Assets\Scripts\AttackUP.cs" />
+     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
