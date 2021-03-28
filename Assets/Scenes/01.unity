@@ -289,7 +289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &476246142
 Transform:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   cond: {fileID: 156260466}
   contador: 0
   limite: 0
-  limiteSet: 7
+  limiteSet: 20
   tempo: 1
 --- !u!1 &519420028
 GameObject:
@@ -876,9 +876,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - tag: low
-    prefab: {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
-    size: 10
+  - tag: enemy
+    prefab:
+    - {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
+    - {fileID: 734859149836286774, guid: 2addfb73483cc1e4aa5aac8516cda220, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 5198390623890377299, guid: bbdc593e17afc5140969d45ce5d44ecb, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 5089089369521707565, guid: 81db61271dedf7a41a9e0189f8ce9bf4, type: 3}
+    - {fileID: 734859149836286774, guid: 273fecf1fdf99b04e80b8e3c0faba86b, type: 3}
+    - {fileID: 734859149836286774, guid: 273fecf1fdf99b04e80b8e3c0faba86b, type: 3}
+    - {fileID: 734859149836286774, guid: 2addfb73483cc1e4aa5aac8516cda220, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 734859149836286774, guid: 2addfb73483cc1e4aa5aac8516cda220, type: 3}
+    - {fileID: 5198390623890377299, guid: bbdc593e17afc5140969d45ce5d44ecb, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 5089089369521707565, guid: a7dfb276f2e3fca4ca269f744427088b, type: 3}
+    - {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
+    - {fileID: 510041213967658225, guid: 65b810fd7c9330741863899825f97a27, type: 3}
+    size: 20
 --- !u!4 &1593562243
 Transform:
   m_ObjectHideFlags: 0

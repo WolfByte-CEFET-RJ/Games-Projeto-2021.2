@@ -13,16 +13,28 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         beatsPorTempo = beatsPorTempo/60f;
+
+        // LEMBRAR DE ALTERAR ISSO ENQUANTO O JOGO FOR PROGREDINDO //
+        if(this.gameObject.tag == "Low")
+            this.transform.position = new Vector2(0f, -3.55f);
+        else if(this.gameObject.tag == "Mid")
+            this.transform.position = new Vector2(0f, -2.52f);
+        else if(this.gameObject.tag == "High")
+            this.transform.position = new Vector2(0f, -1.3f);
+
     }
     void Update()
     {   
         Vector2 move = new Vector2(-beatsPorTempo * Time.deltaTime, 0f);
         this.transform.Translate(move);
 
+
+        //talvez o codigo esteja no local errado?
         if(podeAcertar == true)
         {
             if(Input.GetKey(KeyCode.Space))
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                ObjectPooler.Instance.SetFalse(this.gameObject);
         }
     }
 
