@@ -8,6 +8,10 @@ TagManager:
   - Low
   - High
   - Check
+  - ColLow
+  - ColMid
+  - ColHigh
+  - Limite
   layers:
   - Default
   - TransparentFX

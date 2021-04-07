@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    //arrays com posições e tipos de inimigos
-    public Transform[] positions;
-    public GameObject[] lowEnemies;
-    public GameObject[] midEnemies;
-    public GameObject[] highEnemies;
-    
     //referencia a classe Conductor (p/acessar algumas variaveis)
     [SerializeField] private Conductor cond;
 
@@ -23,7 +17,7 @@ public class EnemyManager : MonoBehaviour
     {
         
         //
-        tempo = cond.secondsPerBeat * 4f;
+        tempo = cond.secondsPerBeat/0.6f;
         //t recebe o valor de tempo, para determinar o limite de tempo
         t = tempo;
     }

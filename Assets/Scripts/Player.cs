@@ -9,8 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float velocidade;
     [SerializeField] private float distance;
 
-    
-    public bool perto;
+    public Enemy enemyRef;
     
     private void Awake()
     {
@@ -25,6 +24,6 @@ public class Player : MonoBehaviour
     {
         float movx = Input.GetAxis("Horizontal");
         float movy = Input.GetAxis("Vertical");
-        rb.velocity = new Vector2(velocidade * movx ,0);
+        rb.velocity = new Vector2(movx* velocidade,0);
     }
 }
