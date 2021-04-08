@@ -14,20 +14,23 @@ public class ObjectPooler : MonoBehaviour
         public int size;
     }
 
-    #region Singleton
-    public static ObjectPooler Instance;
-    private void Awake() {
-        Instance = this;
-    }
-    #endregion
+    /* #region Singleton */
+        public static ObjectPooler Instance;
+        private void Awake() {
+            Instance = this;
+        }
+    /* #endregion */
     
     public List<Pool> pools; 
     public Dictionary<string, Queue<GameObject>> poolDicionario;
-    //public Queue<GameObject> enemiesQueue;
+    
+    public int limite; 
+    public static int limiteSet;
     void Start()
     {
         poolDicionario = new Dictionary<string, Queue<GameObject>>();
         //enemiesQueue = new Queue<GameObject>();
+        limite = 0;
 
         foreach (Pool p in pools)
         {
@@ -50,16 +53,27 @@ public class ObjectPooler : MonoBehaviour
             return null;
         }
         
-        GameObject o = poolDicionario[tag].Dequeue();
-        
-        if(o.gameObject.tag == "Low")
-            o.transform.position = new Vector2(30f, -3.55f);
-        else if(o.gameObject.tag== "Mid")
-            o.transform.position = new Vector2(30f, -2.52f);
-        else if(o.gameObject.tag == "High")
-            o.transform.position = new Vector2(30f, -1.3f);    
-        o.SetActive(true);
-        return o;
+            if(poolDicionario.Count != 0)
+            {
+                GameObject o = poolDicionario[tag].Dequeue();
+            
+                if(o.gameObject.tag == "Low")
+                    o.transform.position = new Vector2(30f, -3.55f);
+                else if(o.gameObject.tag== "Mid")
+                    o.transform.position = new Vector2(30f, -2.52f);
+                else if(o.gameObject.tag == "High")
+                    o.transform.position = new Vector2(30f, -1.3f);    
+            
+
+                o.SetActive(true);
+                limite++;
+                return o;
+            }
+            else
+            {
+                Debug.LogWarning("Fim da fila, fila vazia");
+                return null;
+            }
     }
     public void SetFalse(GameObject go, string tag)
     {
@@ -73,7 +87,5 @@ public class ObjectPooler : MonoBehaviour
             return;
     }
 }
-
-//Inimigo, bateu no colisor
-//desativa e traz de volta para a fila
-//
+// Velocidade do inimigo
+// parar com os erros de fim de

@@ -15,11 +15,11 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
-        
-        //
-        tempo = cond.secondsPerBeat/0.6f;
+    
+        //tempo = cond.secondsPerBeat; //0,4s
         //t recebe o valor de tempo, para determinar o limite de tempo
         t = tempo;
+
     }
 
     void Update()
@@ -31,6 +31,6 @@ public class EnemyManager : MonoBehaviour
                 tempo = t;
                 limite++;
             }
-
+           
     }
 }

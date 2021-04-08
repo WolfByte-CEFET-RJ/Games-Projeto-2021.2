@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {   
-        Vector2 move = new Vector2(-(beatsPorTempo* Time.deltaTime), 0f);
+        Vector2 move = new Vector2(-(beatsPorTempo *Time.deltaTime), 0f);
         this.transform.Translate(move);
     }
 
