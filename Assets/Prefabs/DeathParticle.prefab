@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7643134208893455543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.669117
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971971, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.20833302
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.08294021
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971980, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.5943396
+      objectReference: {fileID: 0}
+    - target: {fileID: 179930485433971982, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}
+      propertyPath: m_Name
+      value: Acai_DeathParticle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f60f4dd070f1b44196bf1d9644c9905, type: 3}

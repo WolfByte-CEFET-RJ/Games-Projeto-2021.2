@@ -26,10 +26,10 @@ public class ObjectPooler : MonoBehaviour
     
     public int limite; 
     public static int limiteSet;
+    public GameObject deathParticle;
     void Start()
     {
         poolDicionario = new Dictionary<string, Queue<GameObject>>();
-        //enemiesQueue = new Queue<GameObject>();
         limite = 0;
 
         foreach (Pool p in pools)
@@ -86,6 +86,5 @@ public class ObjectPooler : MonoBehaviour
         else 
             return;
     }
+    
 }
-// Velocidade do inimigo
-// parar com os erros de fim de

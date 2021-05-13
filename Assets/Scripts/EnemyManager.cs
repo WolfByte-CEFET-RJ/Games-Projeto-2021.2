@@ -15,13 +15,10 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
-    
         //tempo = cond.secondsPerBeat; //0,4s
         //t recebe o valor de tempo, para determinar o limite de tempo
         t = tempo;
-
     }
-
     void Update()
     {
         tempo -= Time.deltaTime;
@@ -30,7 +27,6 @@ public class EnemyManager : MonoBehaviour
                 ObjectPooler.Instance.SpawnFromPool("enemy");                
                 tempo = t;
                 limite++;
-            }
-           
+            }  
     }
 }
