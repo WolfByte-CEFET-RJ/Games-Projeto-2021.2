@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     {
        controleDeErros = 0f;
        controleDeAcertos = 0f;
-       apertou = false;
+       
     }
 
  
