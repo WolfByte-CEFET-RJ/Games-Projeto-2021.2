@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Teste.cs" />
      <Compile Include="Assets\Scripts\AudioManager\Conductor.cs" />
      <Compile Include="Assets\Scripts\AttackUP.cs" />
     <Reference Include="UnityEngine">

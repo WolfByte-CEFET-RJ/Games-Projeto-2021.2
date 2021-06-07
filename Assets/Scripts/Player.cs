@@ -11,19 +11,22 @@ public class Player : MonoBehaviour
 
     public Enemy enemyRef;
     
+    
+    public bool aux;
+
+
     private void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
     void Start()
     {
-        velocidade = 4;
+        
     }
 
     void Update()
     {
-        float movx = Input.GetAxis("Horizontal");
-        float movy = Input.GetAxis("Vertical");
-        rb.velocity = new Vector2(movx* velocidade,0);
+        
+        
     }
 }

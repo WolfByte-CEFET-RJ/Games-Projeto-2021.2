@@ -27,6 +27,8 @@ public class ObjectPooler : MonoBehaviour
     public int limite; 
     public static int limiteSet;
     public GameObject deathParticle;
+
+    public Transform upPos, midPos, dPos;
     void Start()
     {
         poolDicionario = new Dictionary<string, Queue<GameObject>>();
@@ -58,11 +60,11 @@ public class ObjectPooler : MonoBehaviour
                 GameObject o = poolDicionario[tag].Dequeue();
             
                 if(o.gameObject.tag == "Low")
-                    o.transform.position = new Vector2(30f, -3.55f);
+                    o.transform.position = dPos.position;
                 else if(o.gameObject.tag== "Mid")
-                    o.transform.position = new Vector2(30f, -2.52f);
+                    o.transform.position = midPos.position;
                 else if(o.gameObject.tag == "High")
-                    o.transform.position = new Vector2(30f, -1.3f);    
+                    o.transform.position = upPos.position;
             
 
                 o.SetActive(true);

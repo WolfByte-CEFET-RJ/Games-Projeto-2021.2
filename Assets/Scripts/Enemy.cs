@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     
     bool setAttack;
     [SerializeField] Animator anim;
-    [SerializeField] Rigidbody2D rigidbody;
+    [SerializeField] Rigidbody2D rb;
     Vector2 move;
 
     public GameObject deathParticle;
@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     {
         contador = 0;
         //anim = gameObject.GetComponent<Animator>();
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player");
         beatsPorTempo = beatsPorTempo/60f;
         setAttack = false;

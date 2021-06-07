@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637527475174910803
-    m_Hash: 1239386099
+      ticks: 637565204008406888
+    m_Hash: 3251555993
   m_LockFileStatus:
     m_FilePath: C:/Users/Vinicius/Desktop/RythmGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637557418081682124
+      ticks: 637565204493732577
     m_Hash: 2065482100
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1231,6 +1231,7 @@ m_ResolvedPackages:
     - 1.4.5
     - 1.4.6
     - 1.4.7
+    - 1.4.8
     - 1.5.0-pre.2
     - 1.5.0-preview.1
     - 1.5.0-preview.2
@@ -1242,6 +1243,7 @@ m_ResolvedPackages:
     - 1.5.1-pre.3
     - 1.5.2
     - 1.5.4
+    - 1.5.5
     - 1.6.0-pre.1
     - 1.6.0-pre.3
     - 1.6.0-pre.4
@@ -1249,10 +1251,11 @@ m_ResolvedPackages:
     - 1.5.1-pre.3
     - 1.5.2
     - 1.5.4
+    - 1.5.5
     - 1.6.0-pre.1
     - 1.6.0-pre.3
     - 1.6.0-pre.4
-    verified: 1.5.4
+    verified: 1.5.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
