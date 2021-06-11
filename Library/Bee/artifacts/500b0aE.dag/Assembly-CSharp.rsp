@@ -340,6 +340,7 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/ObjectPooler.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/Teste.cs"
 -langversion:8.0
 
 /deterministic

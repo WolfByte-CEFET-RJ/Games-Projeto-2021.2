@@ -20,8 +20,7 @@ public class Conductor : MonoBehaviour
     //quanto tempo passou desde que o musica iniciou, em segundos
     public float dspSongTime;
 
-    //referencia ao AudioSource
-    public AudioSource musicSource;
+    public AudioSource backMusic, leadMusic;
 
     //quantas batidas existem na tela
     public float BeatsShownInAdvance = 4f;
@@ -36,18 +35,33 @@ public class Conductor : MonoBehaviour
     public float loopPositionInBeats;
 
 
+    //deletar
+    public float erro, acerto;
+
+    //aux
+    [SerializeField] private AudioMixer _audioMixer;
+    public float i;
+    
+
     void Start()
     {
-        musicSource = GetComponent<AudioSource>();
         secondsPerBeat = 60f/songBpm;
         dspSongTime = (float)AudioSettings.dspTime;
-        musicSource.Play();        
+        backMusic.Play();
+        leadMusic.Play();   
+        i = -10f; 
     }
 
 
     //musica começa no 14f e 32f
     void Update() {
+        
+        erro = GameManager.Instance.erros;
+        acerto = GameManager.Instance.acertos;
 
+        i = GameManager.Instance.controleTotal;
+        _audioMixer.SetFloat("Music", i);
+        
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
         songPositionInBeats = songPosition/secondsPerBeat;    
         
@@ -56,5 +70,17 @@ public class Conductor : MonoBehaviour
         if(songPositionInBeats >= (completedLoops + 1 )* beatsPerLoop)
             completedLoops++;
         loopPositionInBeats = songPositionInBeats - completedLoops * beatsPerLoop;
+
+        if(i >= -6f)
+        {
+            i = -6f;
+        }
+        
+        if(i <= -20f)
+        {
+            i = -26f;
+        }
+
     }
+
 }
