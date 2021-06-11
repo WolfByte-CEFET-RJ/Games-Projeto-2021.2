@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637538278300307537
-    m_Hash: 3071002607
+      ticks: 637590263023234560
+    m_Hash: 2673822275
   m_LockFileStatus:
     m_FilePath: C:/Users/Pedro/Desktop/GitRepo/Projeto-IEEE-Games/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637588380795757319
+      ticks: 637590271181047106
     m_Hash: 721569676
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
