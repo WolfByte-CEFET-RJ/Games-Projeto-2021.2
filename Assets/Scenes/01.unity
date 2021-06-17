@@ -909,13 +909,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741301391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 4.2754, y: -3.03, z: 0}
-  m_LocalScale: {x: 0.0022723991, y: 0.0026782337, z: 1}
-=======
-  m_LocalPosition: {x: -1.05, y: -4.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> 23ce1cbc5f71e29ed00a49d7b38a671a349250f0
+  m_LocalPosition: {x: -1.46, y: -2.65, z: 0}
+  m_LocalScale: {x: 0.0039707185, y: 0.0038634494, z: 1}
   m_Children:
   - {fileID: 519420032}
   - {fileID: 626760374}
@@ -971,7 +966,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &741301396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,7 +983,7 @@ MonoBehaviour:
   velocidade: 0
   distance: 0
   enemyRef: {fileID: 0}
-<<<<<<< HEAD
+  aux: 0
 --- !u!95 &741301397
 Animator:
   serializedVersion: 3
@@ -1021,9 +1016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 741301397}
-=======
-  aux: 0
->>>>>>> 23ce1cbc5f71e29ed00a49d7b38a671a349250f0
 --- !u!1 &754852683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,7 +1444,6 @@ MonoBehaviour:
   controleDeAcertos: 0
   controleDeErros: 0
   controleTotal: 0
-  apertou: 0
   anim: {fileID: 968838651}
 --- !u!1 &1347667969
 GameObject:
