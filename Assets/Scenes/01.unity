@@ -841,7 +841,6 @@ GameObject:
   - component: {fileID: 741301395}
   - component: {fileID: 741301396}
   - component: {fileID: 741301397}
-  - component: {fileID: 741301398}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -898,7 +897,7 @@ SpriteRenderer:
   m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &741301393
@@ -909,8 +908,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741301391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.46, y: -2.65, z: 0}
-  m_LocalScale: {x: 0.0039707185, y: 0.0038634494, z: 1}
+  m_LocalPosition: {x: -1.01, y: -4.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
   - {fileID: 626760374}
@@ -1003,19 +1002,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &741301398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741301391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed2f808a146bdc43943e26e05d2f09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 741301397}
 --- !u!1 &754852683
 GameObject:
   m_ObjectHideFlags: 0

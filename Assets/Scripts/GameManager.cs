@@ -73,6 +73,9 @@ public class GameManager : MonoBehaviour
           controleDeErros = erros;
         }
 
+        if(controleTotal <=  -26f)
+          controleTotal = -20f;
+
       controleTotal = controleDeAcertos - controleDeErros;
     }
 
