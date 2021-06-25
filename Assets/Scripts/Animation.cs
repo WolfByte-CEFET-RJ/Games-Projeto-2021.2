@@ -11,13 +11,13 @@ public class Animation : MonoBehaviour
     {
         
         if(Input.GetKeyDown(KeyCode.D)){
-            anim.SetTrigger("AttackFront");
+            anim.SetTrigger("Front");
         }
         else if(Input.GetKeyDown(KeyCode.S)){
-            anim.SetTrigger("AttackDown");
+            anim.SetTrigger("Down");
         }
         else if(Input.GetKeyDown(KeyCode.W)){
-            anim.SetTrigger("AttackUp");
+            anim.SetTrigger("Up");
         }
             
         

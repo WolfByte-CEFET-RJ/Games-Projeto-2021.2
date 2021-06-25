@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0888dd75-9856-59d5-6e6e-8ae75c40a27a}</ProjectGuid>
+    <ProjectGuid>{81209627-78b9-6c62-52a4-620925826c57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,7 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AudioManager\Player.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\AudioManager\AudioManager.cs" />
      <Compile Include="Assets\Arts\Bandits - Pixel Art\Demo\Bandit.cs" />
      <Compile Include="Assets\Scripts\AttackFront.cs" />
@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Arts\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Animation.cs" />
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -627,91 +628,91 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.0b3/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>C:/Users/Vinicius/Desktop/RythmGame/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>C:/Users/Vinicius/Desktop/Projeto-IEEE-Games - Copia/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

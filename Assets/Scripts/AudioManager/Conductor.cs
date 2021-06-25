@@ -76,7 +76,7 @@ public class Conductor : MonoBehaviour
             i = -6f;
         }
         
-        if(i <= -26f)
+        if(i <= -20f)
         {
             i = -26f;
         }
