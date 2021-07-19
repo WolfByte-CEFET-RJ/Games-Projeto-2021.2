@@ -9,12 +9,14 @@ public class Boss : MonoBehaviour
     
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletSpawn;
+    [SerializeField] private ProjectilePool ppRef;
     
     // Start is called before the first frame update
     void Start()
     {
         isAttacking = false;
         bossAnim = this.gameObject.GetComponentInChildren<Animator>();
+
     }
 
     // Update is called once per frame
@@ -28,7 +30,8 @@ public class Boss : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.O))
         {
-            Shoot();
+           ppRef.SpawnFromPool("bullet");
+           ppRef.SpawnFromPool("rocks");
         }
         
 
@@ -40,4 +43,6 @@ public class Boss : MonoBehaviour
         Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
         bulletRB.AddForce(-bulletSpawn.right * 10f, ForceMode2D.Impulse);
     }
+
+ 
 }

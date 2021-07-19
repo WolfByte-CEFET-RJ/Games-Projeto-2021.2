@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\MenuFolder\SettingsMenu.cs" />
      <Compile Include="Assets\Arts\Bandits - Pixel Art\Demo\Bandit.cs" />
+     <Compile Include="Assets\Scripts\Boss\BossProjectile.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Arts\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
@@ -49,7 +50,7 @@
      <Compile Include="Assets\Scripts\MenuFolder\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Boss\Boss.cs" />
      <Compile Include="Assets\Scripts\AudioManager\Conductor.cs" />
-     <Compile Include="Assets\Scripts\Boss\BossProjectile.cs" />
+     <Compile Include="Assets\Scripts\Boss\ProjectilePool.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
