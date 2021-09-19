@@ -6,43 +6,50 @@ public class Boss : MonoBehaviour
 {
     [SerializeField] private Animator bossAnim;
     public bool isAttacking;
-    
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform bulletSpawn;
+
     [SerializeField] private ProjectilePool ppRef;
-    
+
+    private float counter;
+
     // Start is called before the first frame update
     void Start()
     {
         isAttacking = false;
         bossAnim = this.gameObject.GetComponentInChildren<Animator>();
+        counter = 3f;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        counter -= Time.deltaTime;
+        //isAttacking = false;
         if(Input.GetKeyDown(KeyCode.P))
         {
-            isAttacking = !isAttacking;
-            bossAnim.SetBool("Attack", isAttacking);
+            ppRef.DisableObject(this.gameObject, this.tag);
+            /*isAttacking = !isAttacking;
+            bossAnim.SetBool("Attack", isAttacking);*/
         }
         
-        if(Input.GetKeyDown(KeyCode.O))
+        if(counter <= 0f)
         {
-           ppRef.SpawnFromPool("bullet");
-           ppRef.SpawnFromPool("rocks");
+            counter = 3f;
+            Attack();   
         }
-        
 
+
+
+    
     }
 
-    void Shoot()
+    private void Attack()
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
-        bulletRB.AddForce(-bulletSpawn.right * 10f, ForceMode2D.Impulse);
+        bossAnim.SetBool("Attack", isAttacking);
+        ppRef.SpawnFromPool("bullet");
+        isAttacking = true;
     }
+
 
  
 }

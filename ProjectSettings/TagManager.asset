@@ -12,6 +12,7 @@ TagManager:
   - ColMid
   - ColHigh
   - Limite
+  - bullet
   layers:
   - Default
   - TransparentFX

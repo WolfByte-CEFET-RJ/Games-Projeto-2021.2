@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ProjectilePool : MonoBehaviour
 {
+    
+    
     [System.Serializable]
     public class Pool{
         public string tag;
@@ -11,6 +13,15 @@ public class ProjectilePool : MonoBehaviour
         public int size;
     }
 
+    #region Singleton
+    public static ProjectilePool Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
+    #endregion
+
+    [SerializeField] private Transform bulletSpawn;
     public List<Pool> pools;  
     public Dictionary<string, Queue<GameObject>> bulletDictionary;
 
@@ -47,6 +58,7 @@ public class ProjectilePool : MonoBehaviour
             if(bulletDictionary.Count != 0)
             {
                 GameObject o = bulletDictionary[tag].Dequeue();
+                o.transform.position = bulletSpawn.position;
                 /*
                 if(o.gameObject.tag == "Low")
                     o.transform.position = dPos.position;
@@ -54,9 +66,10 @@ public class ProjectilePool : MonoBehaviour
                     o.transform.position = midPos.position;
                 else if(o.gameObject.tag == "High")
                     o.transform.position = upPos.position;*/
-            
-
+    
                 o.SetActive(true);
+                Rigidbody2D bulletRB = o.GetComponent<Rigidbody2D>();
+                bulletRB.AddForce(-bulletSpawn.right * 10f, ForceMode2D.Impulse);
                 return o;
             }
             else
@@ -66,4 +79,18 @@ public class ProjectilePool : MonoBehaviour
             }
     }
 
+
+    public void DisableObject(GameObject o, string tag)
+    {
+        //condition ? consequent : alternative
+        if (o.activeInHierarchy)
+        {
+            //Debug.Log(o.name + o.tag);
+            o.SetActive(false);
+            bulletDictionary[o.tag].Enqueue(o);
+        }
+        else
+            return;
+
+    }
 }
